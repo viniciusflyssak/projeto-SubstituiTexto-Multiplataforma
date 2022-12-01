@@ -1,0 +1,205 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Susbtituidor de textos'
+  ClientHeight = 640
+  ClientWidth = 380
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object pnlFundo: TPanel
+    Align = Client
+    Size.Width = 380.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object pnlBotoes: TPanel
+      Align = Bottom
+      Position.Y = 600.000000000000000000
+      Size.Width = 380.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object btnFechar: TSpeedButton
+        Align = Right
+        Position.X = 220.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Fechar'
+        OnClick = btnFecharClick
+      end
+      object btnSubstituir: TSpeedButton
+        Align = Right
+        Position.X = 300.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Substituir'
+        OnClick = btnSubstituirClick
+      end
+    end
+    object pnlMemo: TPanel
+      Align = Bottom
+      Position.Y = 302.000000000000000000
+      Size.Width = 380.000000000000000000
+      Size.Height = 248.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object mmoTexto: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Size.Width = 380.000000000000000000
+        Size.Height = 207.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 376.000000000000000000
+        Viewport.Height = 203.000000000000000000
+      end
+      object lblTextoResultante: TLabel
+        Align = Top
+        Position.Y = 15.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Texto resultante:'
+        TabOrder = 1
+      end
+      object linDiv5: TLine
+        Align = Top
+        LineType = Bottom
+        RotationCenter.X = 0.000000000000000000
+        RotationCenter.Y = 0.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object linDiv6: TLine
+        Align = Bottom
+        LineType = Bottom
+        Position.Y = 247.000000000000000000
+        RotationCenter.X = 0.000000000000000000
+        RotationCenter.Y = 0.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object PnlTextos: TPanel
+      Align = Top
+      Size.Width = 380.000000000000000000
+      Size.Height = 249.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lblTextoAntigo: TLabel
+        Align = Top
+        Size.Width = 380.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Texto Antigo:'
+        TabOrder = 3
+      end
+      object lblTextoSubstituto: TLabel
+        Align = Top
+        Position.Y = 140.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Texto que substituir'#225':'
+        TabOrder = 2
+      end
+      object lblTextoSubstituido: TLabel
+        Align = Top
+        Position.Y = 70.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Texto a ser substitu'#237'do:'
+        TabOrder = 0
+      end
+      object linDiv: TLine
+        Align = Top
+        LineType = Top
+        Position.Y = 125.000000000000000000
+        RotationCenter.X = 0.000000000000000000
+        RotationCenter.Y = 0.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object linDiv2: TLine
+        Align = Top
+        LineType = Top
+        Position.Y = 195.000000000000000000
+        RotationCenter.X = 0.000000000000000000
+        RotationCenter.Y = 0.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object linDiv3: TLine
+        Align = Top
+        LineType = Top
+        Position.Y = 55.000000000000000000
+        RotationCenter.X = 0.000000000000000000
+        RotationCenter.Y = 0.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblObs: TLabel
+        Align = Top
+        Position.Y = 210.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Obs: ma'#237'usculas e min'#250'sculas devem ser diferenciadas!'
+        TabOrder = 1
+      end
+      object mmoTextoAntigo: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Top
+        Position.Y = 25.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Viewport.Width = 376.000000000000000000
+        Viewport.Height = 26.000000000000000000
+      end
+      object mmoTextoSubstituto: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Top
+        Position.Y = 165.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Viewport.Width = 376.000000000000000000
+        Viewport.Height = 26.000000000000000000
+      end
+      object mmoTextoSubstituir: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Top
+        Position.Y = 95.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Viewport.Width = 376.000000000000000000
+        Viewport.Height = 26.000000000000000000
+      end
+    end
+    object badAnuncio: TBannerAd
+      Align = Bottom
+      Position.Y = 550.000000000000000000
+    end
+  end
+end

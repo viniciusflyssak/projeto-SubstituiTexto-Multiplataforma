@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/11/25 13:06:04.000.609,=C:\Users\vinic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/11/25 13:06:27.000.843,C:\Users\vinic\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\projetos Delphi\Projeto Substituidor de textos mobile\uFrmPrincipal.fmx</Transaction>
+    <Transaction>2022/11/25 13:06:27.000.843,C:\Users\vinic\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\projetos Delphi\Projeto Substituidor de textos mobile\uFrmPrincipal.pas</Transaction>
+    <Transaction>2022/11/25 13:06:38.000.047,C:\Users\vinic\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\projetos Delphi\Projeto Substituidor de textos mobile\projSubstituiTexttoMobile.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android64="" Android=""/>
+	</ActiveMobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>
